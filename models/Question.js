@@ -9,15 +9,19 @@ class Question{
       )`
       
       db.run(sql, function(){
-        resolve("questions table created")
+        resolve("questions table created");
       })      
     })
   }
 
   constructor(content){
-    this.content = content
+    this.content = content;
   }
 
+  function insert() {
+    const self = this;
+    
+  }
 }
 
 module.exports = Question;
